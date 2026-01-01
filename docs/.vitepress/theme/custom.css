@@ -1,0 +1,334 @@
+/**
+ * IKunCode 企业级文档样式
+ * 参考：VitePress 官网蓝紫色渐变风格
+ */
+
+:root {
+  /* Design tokens */
+  --ds-radius-sm: 10px;
+  --ds-radius-md: 14px;
+  --ds-radius-lg: 18px;
+  --ds-blur: 18px;
+
+  /* 主题色：VitePress 蓝紫色渐变 */
+  --ds-accent: #5e7ce2; /* 柔和蓝色 */
+  --ds-accent-purple: #9f7ae8; /* 柔和紫色 */
+
+  /* 语义色 */
+  --ds-success: #16a34a;
+  --ds-warning: #f59e0b;
+  --ds-danger: #ef4444;
+  --ds-info: #3b82f6;
+
+  /* 中性色：高对比但不刺眼 */
+  --ds-bg: #ffffff;
+  --ds-bg-soft: #f7f8fb;
+  --ds-surface: rgba(255, 255, 255, 0.7);
+  --ds-text: #0b1220;
+  --ds-text-2: rgba(11, 18, 32, 0.72);
+  --ds-border: rgba(11, 18, 32, 0.12);
+
+  /* 渐变：Hero 背景蓝紫色柔和渐变 */
+  --ds-gradient-hero: radial-gradient(
+      900px 520px at 15% 15%,
+      rgba(94, 124, 226, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      820px 520px at 75% 20%,
+      rgba(159, 122, 232, 0.15),
+      transparent 62%
+    ),
+    radial-gradient(
+      900px 600px at 35% 75%,
+      rgba(94, 124, 226, 0.12),
+      transparent 60%
+    );
+  --ds-gradient-border: linear-gradient(
+    135deg,
+    rgba(94, 124, 226, 0.7),
+    rgba(159, 122, 232, 0.55) 55%,
+    rgba(59, 130, 246, 0.55)
+  );
+
+  /* 字体：保持系统字体堆栈（Vercel/Stripe 常见） */
+  --ds-font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei';
+  --ds-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+
+  /* 阴影：少量层级 */
+  --ds-shadow-sm: 0 8px 24px rgba(11, 18, 32, 0.08);
+  --ds-shadow-md: 0 14px 42px rgba(11, 18, 32, 0.12);
+  --ds-shadow-glow: 0 0 0 1px rgba(94, 124, 226, 0.22),
+    0 16px 48px rgba(94, 124, 226, 0.16);
+}
+
+/* 深色模式：不要"反相"，而是重设 tokens（React/Vercel 常见） */
+.dark {
+  --ds-bg: #0b0f19;
+  --ds-bg-soft: #0f1522;
+  --ds-surface: rgba(15, 21, 34, 0.72);
+  --ds-text: rgba(255, 255, 255, 0.92);
+  --ds-text-2: rgba(255, 255, 255, 0.72);
+  --ds-border: rgba(255, 255, 255, 0.14);
+  --ds-shadow-sm: 0 10px 28px rgba(0, 0, 0, 0.34);
+  --ds-shadow-md: 0 18px 56px rgba(0, 0, 0, 0.42);
+}
+
+/* 将 tokens 映射到 VitePress 变量（最佳实践：用 VP 自带变量覆盖） */
+:root {
+  --vp-c-bg: var(--ds-bg);
+  --vp-c-bg-soft: var(--ds-bg-soft);
+  --vp-c-text-1: var(--ds-text);
+  --vp-c-text-2: var(--ds-text-2);
+  --vp-c-divider: var(--ds-border);
+  --vp-c-brand-1: var(--ds-accent);
+  --vp-c-brand-2: color-mix(in srgb, var(--ds-accent), white 16%);
+  --vp-c-brand-3: color-mix(in srgb, var(--ds-accent), black 10%);
+  --vp-font-family-base: var(--ds-font-sans);
+  --vp-font-family-mono: var(--ds-font-mono);
+}
+
+/* 文档排版：提高"长文可读性"（Stripe/Tailwind 常见） */
+.VPDoc {
+  color: var(--ds-text);
+}
+
+.VPDoc h1,
+.VPDoc h2,
+.VPDoc h3 {
+  letter-spacing: -0.01em;
+}
+
+.VPDoc p,
+.VPDoc li {
+  color: var(--ds-text-2);
+  line-height: 1.75;
+}
+
+/* 内容区宽度：企业文档常见"更窄的阅读列 + 更宽的代码块" */
+:root {
+  --vp-layout-max-width: 1440px;
+}
+.VPDoc .content-container {
+  max-width: 820px;
+}
+
+/* 代码块：Stripe/Vercel 风格（圆角、边框、柔和底色） */
+.VPDoc pre {
+  border: 1px solid var(--ds-border);
+  border-radius: var(--ds-radius-md);
+  box-shadow: var(--ds-shadow-sm);
+}
+
+.VPDoc :not(pre) > code {
+  border: 1px solid var(--ds-border);
+  border-radius: 10px;
+  padding: 0.15em 0.4em;
+  background: color-mix(in srgb, var(--ds-bg-soft), transparent 12%);
+}
+
+/* 提示框：统一语义色，避免"同一类提示框每页不一致" */
+.VPDoc .custom-block {
+  border-radius: var(--ds-radius-md);
+  border: 1px solid var(--ds-border);
+  box-shadow: none;
+  background: color-mix(in srgb, var(--ds-bg-soft), transparent 0%);
+}
+
+.VPDoc .custom-block.tip {
+  border-left-color: var(--ds-success);
+}
+.VPDoc .custom-block.warning {
+  border-left-color: var(--ds-warning);
+}
+.VPDoc .custom-block.danger {
+  border-left-color: var(--ds-danger);
+}
+.VPDoc .custom-block.info {
+  border-left-color: var(--ds-info);
+}
+
+/* 卡片：Features/入口卡片（Vue/Tailwind/Stripe 常见） */
+.ds-card {
+  border: 1px solid var(--ds-border);
+  border-radius: var(--ds-radius-lg);
+  background: var(--ds-surface);
+  backdrop-filter: blur(var(--ds-blur));
+  box-shadow: var(--ds-shadow-sm);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+.ds-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--ds-shadow-md);
+  border-color: color-mix(in srgb, var(--ds-accent), var(--ds-border) 55%);
+}
+
+/* CTA 按钮：主按钮"填充"，次按钮"描边+玻璃" */
+.ds-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease,
+    border-color 160ms ease;
+  user-select: none;
+}
+.ds-btn:active {
+  transform: translateY(1px);
+}
+.ds-btn-primary {
+  background: var(--ds-accent);
+  color: white;
+  box-shadow: var(--ds-shadow-glow);
+}
+.ds-btn-primary:hover {
+  background: color-mix(in srgb, var(--ds-accent), black 8%);
+}
+.ds-btn-secondary {
+  background: color-mix(in srgb, var(--ds-bg), transparent 24%);
+  border-color: var(--ds-border);
+  color: var(--ds-text);
+}
+.ds-btn-secondary:hover {
+  border-color: color-mix(in srgb, var(--ds-accent), var(--ds-border) 60%);
+}
+
+/* Hero 背景容器：渐变 + 轻噪点（Stripe/Vercel 常见） */
+.ds-hero-bg {
+  position: relative;
+  background: var(--ds-gradient-hero);
+}
+.ds-hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.22;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 1px),
+    radial-gradient(rgba(0, 0, 0, 0.12) 1px, transparent 1px);
+  background-size: 38px 38px, 56px 56px;
+  background-position: 0 0, 14px 18px;
+  mask-image: radial-gradient(800px 380px at 50% 0%, black, transparent 70%);
+}
+
+/* 微交互：统一"减少动效"策略（企业站必备） */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* VitePress Hero Image 3D 卡片效果 */
+.VPHero .image-container {
+  perspective: 1200px;
+  overflow: visible !important;
+  padding: 40px !important;
+  margin-top: -85px !important;
+}
+
+.VPHero .image-bg {
+  overflow: visible !important;
+}
+
+.VPHero .VPImage,
+.ds-hero-3d-img {
+  transform-style: preserve-3d;
+  transform: rotateX(8deg) rotateY(-12deg) rotateZ(2deg);
+  transition: transform 480ms cubic-bezier(0.23, 1, 0.32, 1);
+  animation: heroFloat3d 6s ease-in-out infinite;
+  border-radius: 28px !important;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 255, 255, 0.88)
+  ) !important;
+  backdrop-filter: blur(20px);
+  box-shadow:
+    0 0 0 1px rgba(94, 124, 226, 0.15),
+    0 12px 32px rgba(94, 124, 226, 0.18),
+    0 32px 64px rgba(159, 122, 232, 0.14),
+    0 0 128px rgba(94, 124, 226, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+  padding: 32px;
+  max-width: 100% !important;
+  width: auto !important;
+}
+
+.dark .VPHero .VPImage,
+.dark .ds-hero-3d-img {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 21, 34, 0.95),
+    rgba(11, 15, 25, 0.92)
+  ) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow:
+    0 0 0 1px rgba(94, 124, 226, 0.2),
+    0 12px 32px rgba(0, 0, 0, 0.4),
+    0 32px 64px rgba(0, 0, 0, 0.3),
+    0 0 128px rgba(94, 124, 226, 0.12) !important;
+}
+
+.VPHero .VPImage:hover,
+.ds-hero-3d-img:hover {
+  transform: rotateX(4deg) rotateY(-8deg) rotateZ(1deg) scale(1.04);
+}
+
+.VPHero .VPImage img,
+.ds-hero-3d-img img {
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+  transition: transform 340ms ease;
+  max-width: 100%;
+  height: auto;
+}
+
+.VPHero .VPImage:hover img,
+.ds-hero-3d-img:hover img {
+  transform: scale(1.05);
+}
+
+@keyframes heroFloat3d {
+  0%,
+  100% {
+    transform: rotateX(8deg) rotateY(-12deg) rotateZ(2deg) translateY(0);
+  }
+  50% {
+    transform: rotateX(6deg) rotateY(-14deg) rotateZ(1deg) translateY(-8px);
+  }
+}
+
+@media (max-width: 768px) {
+  .VPHero .image-container {
+    padding: 20px !important;
+  }
+
+  .VPHero .VPImage,
+  .ds-hero-3d-img {
+    transform: rotateX(4deg) rotateY(-6deg) rotateZ(1deg);
+    padding: 24px;
+  }
+
+  @keyframes heroFloat3d {
+    0%,
+    100% {
+      transform: rotateX(4deg) rotateY(-6deg) rotateZ(1deg) translateY(0);
+    }
+    50% {
+      transform: rotateX(2deg) rotateY(-8deg) rotateZ(0deg) translateY(-4px);
+    }
+  }
+}
+
+

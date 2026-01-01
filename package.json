@@ -1,0 +1,21 @@
+{
+  "name": "ikuncode-docs",
+  "version": "1.0.0",
+  "description": "IKunCode 使用文档 - VitePress 版本",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": ["ikuncode", "docs", "claude-code", "codex", "gemini-cli"],
+  "author": "IKunCode",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.26"
+  }
+}
