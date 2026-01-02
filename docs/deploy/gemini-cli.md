@@ -105,7 +105,7 @@ npm install -g @google/gemini-cli
 在 `gemini` 文件夹新建 `.env` 文件：
 
 ```env
-GOOGLE_GENAI_BASE_URL=https://api.ikuncode.cc
+GOOGLE_GEMINI_BASE_URL=https://api.ikuncode.cc
 GEMINI_API_KEY=你的专属密钥请到https://ikuncode.cc获取
 GEMINI_MODEL=gemini-3-pro-preview
 ```
@@ -160,7 +160,7 @@ cd ~/.gemini
 
 ```bash
 cat > .env << 'EOF'
-GOOGLE_GENAI_BASE_URL=https://api.ikuncode.cc
+GOOGLE_GEMINI_BASE_URL=https://api.ikuncode.cc
 GEMINI_API_KEY=你的专属密钥请到https://ikuncode.cc获取
 GEMINI_MODEL=gemini-3-pro-preview
 EOF
@@ -210,7 +210,7 @@ cd ~/.gemini
 
 ```bash
 cat > .env << 'EOF'
-GOOGLE_GENAI_BASE_URL=https://api.ikuncode.cc
+GOOGLE_GEMINI_BASE_URL=https://api.ikuncode.cc
 GEMINI_API_KEY=你的专属密钥请到https://ikuncode.cc获取
 GEMINI_MODEL=gemini-3-pro-preview
 EOF

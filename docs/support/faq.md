@@ -130,6 +130,14 @@ Claude Code、CodeX 和 Gemini CLI 都需要 Node.js 18+ 版本。
 
 ## 更多问题
 
+### 遇到技术难题？
+
+如果遇到启动失败、报错、超时等技术问题，请查看：
+
+👉 **[疑难杂症排查指南](/support/troubleshooting)** - 详细的错误排查和解决方案
+
+### 仍未解决？
+
 如果上述问题没有解决您的疑问，请：
 - 加入 Telegram 群组：[https://t.me/ikuncode](https://t.me/ikuncode)
 - 查看[售前售后](/support/after-sales)联系客服

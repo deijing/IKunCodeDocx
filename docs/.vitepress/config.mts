@@ -85,6 +85,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '进阶技巧', link: '/support/advanced' },
+          { text: '疑难杂症', link: '/support/troubleshooting' },
           { text: '售前售后', link: '/support/after-sales' },
           { text: '常见问题', link: '/support/faq' }
         ]
