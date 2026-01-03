@@ -32,6 +32,14 @@ export default defineConfig({
           { text: 'Gemini CLI', link: '/deploy/gemini-cli' }
         ]
       },
+      {
+        text: '第三方应用',
+        items: [
+          { text: 'Hapi 远程控制', link: '/apps/hapi' },
+          { text: 'Alma 客户端', link: '/apps/alma' },
+          { text: 'CherryStudio 客户端', link: '/apps/cherry-studio' }
+        ]
+      },
       { text: '支持与 FAQ', link: '/support/faq' }
     ],
 
@@ -78,6 +86,16 @@ export default defineConfig({
           { text: 'Claude Code 部署', link: '/deploy/claude-code' },
           { text: 'CodeX 部署', link: '/deploy/codex' },
           { text: 'Gemini CLI 部署', link: '/deploy/gemini-cli' }
+        ]
+      },
+      {
+        text: '第三方应用',
+        collapsed: false,
+        items: [
+          { text: 'Hapi 远程控制', link: '/apps/hapi' },
+          { text: 'Hapi 进阶：优选 IP 配置', link: '/apps/hapi-advanced' },
+          { text: 'Alma 客户端', link: '/apps/alma' },
+          { text: 'CherryStudio 客户端', link: '/apps/cherry-studio' }
         ]
       },
       {
