@@ -250,7 +250,7 @@ ikuncodeline --theme mytheme
 
 ## 🙏 特别致谢
 
-感谢 **IKunCode 项目 QQ 群友 3323806209** 在工具开发过程中提供的宝贵帮助和技术支持！
+感谢 **JiangNight** 在工具开发过程中提供的宝贵帮助和技术支持！
 
 正是因为社区成员的积极贡献，IKunCodeLine 才能不断完善，为大家提供更好的使用体验。
 
