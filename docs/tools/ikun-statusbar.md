@@ -250,9 +250,9 @@ ikuncodeline --theme mytheme
 
 ## 🙏 特别致谢
 
-感谢 **JiangNight** 在工具开发过程中提供的宝贵帮助和技术支持！
+特别感谢 **JiangNight** 开发了这款优秀的工具！
 
-正是因为社区成员的积极贡献，IKunCodeLine 才能不断完善，为大家提供更好的使用体验。
+IKunCodeLine 由 JiangNight 全程开发，为 IkunCode 用户提供了便捷的状态栏解决方案。感谢他的辛勤付出和持续维护！
 
 ::: info 🎉 开始使用！
 配置完成后，重启 Claude Code，您就能在状态栏中看到实时的账户余额和其他信息了。
