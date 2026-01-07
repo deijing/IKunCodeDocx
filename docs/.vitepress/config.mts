@@ -76,7 +76,8 @@ export default defineConfig({
         text: '快速配置工具',
         collapsed: false,
         items: [
-          { text: 'CC-Switch 配置工具', link: '/tools/cc-switch' }
+          { text: 'CC-Switch 配置工具', link: '/tools/cc-switch' },
+          { text: 'IKun 状态栏', link: '/tools/ikun-statusbar' }
         ]
       },
       {
