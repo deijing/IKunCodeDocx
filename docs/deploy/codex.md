@@ -113,16 +113,29 @@ cd %USERPROFILE%\.codex
 **编写配置文件：config.toml**
 ```toml
 model_provider = "IkunCoding"
-model = "gpt-5-codex"
-model_reasoning_effort = "high"
+model = "gpt-5.2-codex"
+model_reasoning_effort = "xhigh"
 network_access = "enabled"
 disable_response_storage = true
+approval_policy = "on-request"
+web_search = "live"
+sandbox_mode = "danger-full-access"
+collaboration_mode = true
+model_supports_reasoning_summaries = true
 
 [model_providers.IkunCoding]
 name = "ikun"
 base_url = "https://api.ikuncode.cc/v1"
 wire_api = "responses"
 requires_openai_auth = true
+
+[features]
+shell_snapshot = true
+
+collab = false
+collaboration_modes = false
+steer = false
+unified_exec = false
 ```
 
 **编写认证文件：auth.json**
@@ -161,16 +174,29 @@ cd ~/.codex
 ```bash
 cat > config.toml << 'EOF'
 model_provider = "IkunCoding"
-model = "gpt-5-codex"
-model_reasoning_effort = "high"
+model = "gpt-5.2-codex"
+model_reasoning_effort = "xhigh"
 network_access = "enabled"
 disable_response_storage = true
+approval_policy = "on-request"
+web_search = "live"
+sandbox_mode = "danger-full-access"
+collaboration_mode = true
+model_supports_reasoning_summaries = true
 
 [model_providers.IkunCoding]
 name = "Ikun"
 base_url = "https://api.ikuncode.cc/v1"
 wire_api = "responses"
 requires_openai_auth = true
+
+[features]
+shell_snapshot = true
+
+collab = false
+collaboration_modes = false
+steer = false
+unified_exec = false
 EOF
 ```
 
@@ -212,16 +238,29 @@ cd ~/.codex
 ```bash
 cat > config.toml << 'EOF'
 model_provider = "IkunCoding"
-model = "gpt-5-codex"
-model_reasoning_effort = "high"
+model = "gpt-5.2-codex"
+model_reasoning_effort = "xhigh"
 network_access = "enabled"
 disable_response_storage = true
+approval_policy = "on-request"
+web_search = "live"
+sandbox_mode = "danger-full-access"
+collaboration_mode = true
+model_supports_reasoning_summaries = true
 
 [model_providers.IkunCoding]
 name = "IkunCoding"
 base_url = "https://api.ikuncode.cc/v1"
 wire_api = "responses"
 requires_openai_auth = true
+
+[features]
+shell_snapshot = true
+
+collab = false
+collaboration_modes = false
+steer = false
+unified_exec = false
 EOF
 ```
 
