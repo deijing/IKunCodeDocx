@@ -44,7 +44,7 @@ npm install -g @openai/codex@latest
 
 1. **提供商名称**：自定义名称（如「IkunCoding」）
 2. **Base URL**：输入 `https://api.ikuncode.cc/v1`
-3. **API Key**：粘贴您从 IkunCode 平台获取的 CodeX 专用令牌（codex测试令牌组）
+3. **API Key**：粘贴您从 IkunCode 平台获取的 CodeX 专用令牌（codex令牌组）
 4. **Model**：选择 `gpt-5-codex`
 5. **其他配置**：根据需求调整推理强度、网络访问等参数
 6. 点击「保存」按钮
@@ -74,7 +74,7 @@ CC-Switch 支持通过系统托盘快速切换 CodeX 配置：
 - 配置立即生效，无需打开主界面
 
 ::: warning ⚠️ 注意事项
-- 务必从 IkunCode 平台创建「codex测试」令牌组的专用密钥
+- 务必从 IkunCode 平台创建「codex」令牌组的专用密钥
 - CodeX 令牌与 Claude Code 令牌不通用
 - 切换配置后需要重启 CodeX 才能生效
 - 可在 CC-Switch 中测试 API 端点速度
@@ -101,7 +101,7 @@ codex --version
 1. 访问 IkunCoding 开发者控制台
 2. 完成账户注册或执行登录操作
 3. 导航至「API 密钥管理」模块
-4. 创建新密钥时，务必选择「codex测试」令牌组
+4. 创建新密钥时，务必选择「codex」令牌组
 5. 安全保存生成的 API Key
 
 ::: danger 🔐 安全提醒
@@ -291,7 +291,7 @@ codex
 
 是的，两者使用不同的令牌组：
 - Claude Code: 使用 Claude Code 令牌组
-- CodeX: 使用 "codex测试" 令牌组
+- CodeX: 使用 "codex" 令牌组
 
 请在 IkunCode 平台创建对应的专用令牌。
 
