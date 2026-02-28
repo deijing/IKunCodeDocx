@@ -2,6 +2,13 @@
 
 **All-in-One AI CLI 管理器 - 桌面应用程序**
 
+## 🔗 相关链接
+
+| 资源 | 地址 |
+|------|------|
+| GitHub 发布页 | [cc-switch/releases](https://github.com/farion1231/cc-switch/releases) |
+| CC-Switch 文档站 | [ccswitch.lovable.app](https://ccswitch.lovable.app/) |
+
 ## 🎯 工具介绍
 
 CC-Switch 是一款跨平台桌面应用程序，统一管理 Claude Code、Codex 和 Gemini CLI 三大 AI 编程工具。通过直观的图形界面，实现配置切换、MCP 服务器管理、系统提示和 Claude Skills 管理。

@@ -29,7 +29,8 @@ export default defineConfig({
         items: [
           { text: 'Claude Code', link: '/deploy/claude-code' },
           { text: 'CodeX', link: '/deploy/codex' },
-          { text: 'Gemini CLI', link: '/deploy/gemini-cli' }
+          { text: 'Gemini CLI', link: '/deploy/gemini-cli' },
+          { text: 'NanoBanana 图像生成', link: '/deploy/nano-banana' }
         ]
       },
       {
@@ -37,7 +38,16 @@ export default defineConfig({
         items: [
           { text: 'Hapi 远程控制', link: '/apps/hapi' },
           { text: 'Alma 客户端', link: '/apps/alma' },
-          { text: 'CherryStudio 客户端', link: '/apps/cherry-studio' }
+          { text: 'CherryStudio 客户端', link: '/apps/cherry-studio' },
+          { text: 'OpenCode', link: '/apps/opencode' },
+          { text: 'OpenClaw', link: '/apps/openclaw' }
+        ]
+      },
+      {
+        text: 'ikun 官方项目',
+        items: [
+          { text: 'ikunimage AI 生图', link: '/skills/ikunimage' },
+          { text: 'ikuncode-aimcp 统一 MCP', link: '/skills/ikuncode-aimcp' }
         ]
       },
       { text: '支持与 FAQ', link: '/support/faq' }
@@ -50,7 +60,8 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '欢迎使用', link: '/intro/welcome' },
-          { text: '中转站是什么', link: '/intro/overview' }
+          { text: '中转站是什么', link: '/intro/overview' },
+          { text: '友情链接（官网镜像站）', link: '/intro/links' }
         ]
       },
       {
@@ -61,6 +72,21 @@ export default defineConfig({
           { text: '创建专属 Key', link: '/guide/create-key' },
           { text: '修改令牌设置', link: '/guide/modify-token' },
           { text: '充值', link: '/guide/recharge' }
+        ]
+      },
+      {
+        text: 'AI 模型接口',
+        collapsed: true,
+        items: [
+          { text: '接口详细设计 ↗', link: 'https://app.apifox.com/project/7865293' },
+          { text: '模型', link: '/api/models' },
+          { text: '聊天', link: '/api/chat' },
+          { text: '补全', link: '/api/completions' },
+          { text: '图像', link: '/api/images' },
+          { text: '音频', link: '/api/audio' },
+          { text: '嵌入', link: '/api/embeddings' },
+          { text: '重排序', link: '/api/rerank' },
+          { text: '审查', link: '/api/moderation' }
         ]
       },
       {
@@ -77,6 +103,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'CC-Switch 配置工具', link: '/tools/cc-switch' },
+          { text: 'Claude Code Hub', link: '/tools/claude-code-hub' },
           { text: 'IKun 状态栏', link: '/tools/ikun-statusbar' }
         ]
       },
@@ -86,7 +113,8 @@ export default defineConfig({
         items: [
           { text: 'Claude Code 部署', link: '/deploy/claude-code' },
           { text: 'CodeX 部署', link: '/deploy/codex' },
-          { text: 'Gemini CLI 部署', link: '/deploy/gemini-cli' }
+          { text: 'Gemini CLI 部署', link: '/deploy/gemini-cli' },
+          { text: 'NanoBanana 图像生成', link: '/deploy/nano-banana' }
         ]
       },
       {
@@ -96,7 +124,17 @@ export default defineConfig({
           { text: 'Hapi 远程控制', link: '/apps/hapi' },
           { text: 'Hapi 进阶：优选 IP 配置', link: '/apps/hapi-advanced' },
           { text: 'Alma 客户端', link: '/apps/alma' },
-          { text: 'CherryStudio 客户端', link: '/apps/cherry-studio' }
+          { text: 'CherryStudio 客户端', link: '/apps/cherry-studio' },
+          { text: 'OpenCode', link: '/apps/opencode' },
+          { text: 'OpenClaw', link: '/apps/openclaw' }
+        ]
+      },
+      {
+        text: 'ikun 官方优质项目',
+        collapsed: false,
+        items: [
+          { text: 'ikunimage AI 生图', link: '/skills/ikunimage' },
+          { text: 'ikuncode-aimcp 统一 MCP', link: '/skills/ikuncode-aimcp' }
         ]
       },
       {

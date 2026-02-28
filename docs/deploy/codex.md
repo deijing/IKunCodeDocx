@@ -2,6 +2,10 @@
 
 **企业级 AI 编码助手 - 完整部署手册**
 
+| 资源 | 地址 |
+|------|------|
+| 官方文档 | [developers.openai.com/codex](https://developers.openai.com/codex/) |
+
 ::: tip 📋 前置要求
 请先完成 [Node.js 环境安装](/node/windows) 和 [CC-Switch 工具安装](/tools/cc-switch)。
 :::

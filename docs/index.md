@@ -13,8 +13,11 @@ hero:
       text: 开始使用
       link: /intro/welcome
     - theme: alt
-      text: 查看指南
-      link: /guide/registration
+      text: 前往官网
+      link: https://api.ikuncode.cc/
+    - theme: sponsor
+      text: 状态检测
+      link: https://check.linux.do/group/IkunCode
 
 features:
   - icon: 🚀
@@ -30,3 +33,5 @@ features:
     title: 一站式服务
     details: 一个账号，多种工具：Claude Code、CodeX、Gemini CLI
 ---
+
+<DsContactGroup />

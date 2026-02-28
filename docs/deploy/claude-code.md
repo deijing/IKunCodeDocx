@@ -1,8 +1,68 @@
 # Claude Code 部署指南
 
+| 资源 | 地址 |
+|------|------|
+| 官方文档 | [docs.claude.com](https://docs.claude.com/zh-CN/docs/claude-code/overview) |
+
 ::: tip 📋 前置要求
 请先完成 [Node.js 环境安装](/node/windows)，确保 Node.js 18+ 已正确安装。
 :::
+
+## ⚡ 首次安装必读：跳过初始化报错
+
+使用中转渠道时，Claude Code 首次启动会出现以下报错：
+
+![Claude Code 首次启动报错](/images/err.png)
+
+```
+Welcome to Claude Code
+Unable to connect to Anthropic services
+Failed to connect to api.anthropic.com: ERR_BAD_REQUEST
+```
+
+这是因为 Claude Code 首次启动会尝试连接官方 API 进行初始化确认，中转渠道无法通过此步骤。**安装完成后、首次启动前**，请先执行以下任一方法跳过：
+
+**方法一：使用 CC-Switch 跳过（推荐）**
+
+打开 [CC-Switch 配置工具](/tools/cc-switch)，进入 **设置 → 通用**，开启 **「跳过 Claude Code 初次安装确认」** 选项即可。
+
+![CC-Switch 跳过初次安装确认](/images/docs.png)
+
+**方法二：手动修改配置文件**
+
+在用户主目录下找到 `~/.claude.json` 文件，在末尾添加 `"hasCompletedOnboarding": true` 字段：
+
+::: warning ⚠️ 注意 JSON 格式
+添加字段前，需要在上一个字段末尾**补一个英文逗号**，否则 JSON 格式错误会导致 Claude Code 无法启动。
+:::
+
+```json
+{
+  "installMethod": "unknown",
+  "autoUpdates": true,
+  "firstStartTime": "2025-07-14T06:11:03.877Z",
+  "userID": "xxxx",
+  "projects": {
+    "/home/your-user": {
+      "allowedTools": [],
+      "history": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false
+    }
+  },  // [!code warning] 这里要加英文逗号
+  "hasCompletedOnboarding": true  // [!code ++] 新增此字段
+}
+```
+
+修改保存后，重新运行 `claude` 即可正常使用。
+
+> 参考来源：[Claude Code 跳过初始化确认](https://www.cnblogs.com/gordonMlxg/articles/19103691)
 
 ## 🚀 使用 CC-Switch 快速配置（推荐）
 
