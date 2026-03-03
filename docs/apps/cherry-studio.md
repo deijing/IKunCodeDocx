@@ -43,14 +43,17 @@ CherryStudio 提供以下强大功能：
 1. 访问 [IkunCode 控制台](https://api.ikuncode.cc/console/token)
 2. 登录你的账户
 3. 根据需要创建对应的令牌组：
-   - **Claude 模型**：选择 C开头的背带裤分组
+   - **Claude 模型**：选择 只允许逆向分组
    - **Gemini 模型**：选择 gemini分组
+
+![只允许逆向分组](/images/逆向分组.png)
+
 4. 保存生成的 API Key
 
 ::: info 📋 配置快速参考
 | 模型 | 提供商类型 | API 地址 | 令牌组 |
 |------|----------|---------|--------|
-| Claude | `Anthropic` | `https://api.ikuncode.cc/v1/messages` | C开头的背带裤分组 |
+| Claude | `Anthropic` | `https://api.ikuncode.cc/v1/messages` | 只允许逆向分组 |
 | Gemini | `Gemini` | `https://api.ikuncode.cc/v1beta/models` | gemini分组 |
 :::
 
@@ -187,12 +190,12 @@ CherryStudio 通常支持调整以下参数：
 
 **可能原因**：
 - API Key 输入错误
-- 令牌组选择错误（C开头的背带裤分组的 Key 不能用于 Gemini）
+- 令牌组选择错误（只允许逆向分组的 Key 不能用于 Gemini）
 - 余额不足
 
 **解决方法**：
 1. 检查 API Key 是否完整复制
-2. 确认在 [IkunCode 控制台](https://api.ikuncode.cc/console/token) 创建了正确的令牌组（Claude 用 C开头的背带裤分组，Gemini 用 gemini分组）
+2. 确认在 [IkunCode 控制台](https://api.ikuncode.cc/console/token) 创建了正确的令牌组（Claude 用 只允许逆向分组，Gemini 用 gemini分组）
 3. 查看账户余额是否充足
 
 ### 模型列表为空？

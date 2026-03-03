@@ -57,7 +57,7 @@ Alma 提供以下强大功能：
 - **API Key**：粘贴你从 [IkunCode 控制台](https://api.ikuncode.cc/console/token) 创建的 API Key
 
 ::: tip 💡 提示
-- Claude 模型：确保使用 C开头的背带裤分组的 API Key
+- Claude 模型：确保使用 只允许逆向分组的 API Key
 - Gemini 模型：确保使用 gemini分组的 API Key
 - IkunCode 的 Codex 暂不支持第三方客户端调用
 :::
@@ -158,7 +158,7 @@ IkunCode 支持通过不同的 API Key（不同分组）访问不同的模型集
 
 - 检查对应的 API Key 是否有权限访问该模型
 - 确认账户余额是否充足
-- 查看 [IkunCode 控制台](https://api.ikuncode.cc/console/token) 的令牌组设置（Claude 用 C开头的背带裤分组，Gemini 用 gemini分组）
+- 查看 [IkunCode 控制台](https://api.ikuncode.cc/console/token) 的令牌组设置（Claude 用 只允许逆向分组，Gemini 用 gemini分组）
 
 ### Alma 和 Claude Code 有什么区别？
 

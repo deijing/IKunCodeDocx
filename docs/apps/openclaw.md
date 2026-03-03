@@ -89,6 +89,8 @@ vim ~/.openclaw/openclaw.json
 ::: tip 💡 支持的分组
 OpenClaw 使用 **逆向分组** 的 API Key。
 
+![只允许逆向分组](/images/逆向分组.png)
+
 请在 [创建专属 Key](/guide/create-key) 时选择逆向分组。
 :::
 

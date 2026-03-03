@@ -62,8 +62,10 @@ npm install -g opencode-ai
 ::: tip 💡 支持的分组
 根据你需要的模型类型，选择正确分组的 API Key：
 
-- **Claude 系列**：C开头的背带裤分组
-- **GPT 系列**：Codex 分组、GPT-Officially 分组
+![只允许逆向分组](/images/逆向分组.png)
+
+- **Claude 系列**：只允许逆向分组
+- **GPT 系列**：Codex 分组
 - **Gemini 系列**：Gemini 分组
 
 请在 [创建专属 Key](/guide/create-key) 时选择对应分组。
