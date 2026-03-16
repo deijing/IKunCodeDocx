@@ -45,7 +45,7 @@ npm install -g @openai/codex@latest
 1. **提供商名称**：自定义名称（如「IkunCoding」）
 2. **Base URL**：输入 `https://api.ikuncode.cc/v1`
 3. **API Key**：粘贴您从 IkunCode 平台获取的 CodeX 专用令牌（codex令牌组）
-4. **Model**：选择 `gpt-5-codex`
+4. **Model**：选择 `gpt-5.4`（书写文档时最新模型为 5.4）
 5. **其他配置**：根据需求调整推理强度、网络访问等参数
 6. 点击「保存」按钮
 
@@ -117,14 +117,11 @@ cd %USERPROFILE%\.codex
 **编写配置文件：config.toml**
 ```toml
 model_provider = "IkunCoding"
-model = "gpt-5.2-codex"
+model = "gpt-5.4"
 model_reasoning_effort = "xhigh"
-network_access = "enabled"
 disable_response_storage = true
 approval_policy = "on-request"
-web_search = "live"
 sandbox_mode = "danger-full-access"
-collaboration_mode = true
 model_supports_reasoning_summaries = true
 
 [model_providers.IkunCoding]
@@ -132,14 +129,6 @@ name = "ikun"
 base_url = "https://api.ikuncode.cc/v1"
 wire_api = "responses"
 requires_openai_auth = true
-
-[features]
-shell_snapshot = true
-
-collab = false
-collaboration_modes = false
-steer = false
-unified_exec = false
 ```
 
 **编写认证文件：auth.json**
@@ -178,29 +167,18 @@ cd ~/.codex
 ```bash
 cat > config.toml << 'EOF'
 model_provider = "IkunCoding"
-model = "gpt-5.2-codex"
+model = "gpt-5.4"
 model_reasoning_effort = "xhigh"
-network_access = "enabled"
 disable_response_storage = true
 approval_policy = "on-request"
-web_search = "live"
 sandbox_mode = "danger-full-access"
-collaboration_mode = true
 model_supports_reasoning_summaries = true
 
 [model_providers.IkunCoding]
-name = "Ikun"
+name = "ikun"
 base_url = "https://api.ikuncode.cc/v1"
 wire_api = "responses"
 requires_openai_auth = true
-
-[features]
-shell_snapshot = true
-
-collab = false
-collaboration_modes = false
-steer = false
-unified_exec = false
 EOF
 ```
 
@@ -242,29 +220,18 @@ cd ~/.codex
 ```bash
 cat > config.toml << 'EOF'
 model_provider = "IkunCoding"
-model = "gpt-5.2-codex"
+model = "gpt-5.4"
 model_reasoning_effort = "xhigh"
-network_access = "enabled"
 disable_response_storage = true
 approval_policy = "on-request"
-web_search = "live"
 sandbox_mode = "danger-full-access"
-collaboration_mode = true
 model_supports_reasoning_summaries = true
 
 [model_providers.IkunCoding]
-name = "IkunCoding"
+name = "ikun"
 base_url = "https://api.ikuncode.cc/v1"
 wire_api = "responses"
 requires_openai_auth = true
-
-[features]
-shell_snapshot = true
-
-collab = false
-collaboration_modes = false
-steer = false
-unified_exec = false
 EOF
 ```
 

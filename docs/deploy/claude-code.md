@@ -66,16 +66,6 @@ Failed to connect to api.anthropic.com: ERR_BAD_REQUEST
 
 ## 🚀 使用 CC-Switch 快速配置（推荐）
 
-::: warning ⚠️ 前置条件
-使用 CC-Switch 配置 Claude Code 之前，请确保已通过 npm 全局安装 Claude Code 工具：
-
-```bash
-npm install -g @anthropic-ai/claude-code
-```
-
-验证安装：`claude --version`
-:::
-
 如果您已安装 [CC-Switch 快速配置工具](/tools/cc-switch)，可以通过图形界面轻松管理 Claude Code 的配置，无需手动编辑配置文件和环境变量。
 
 ### CC-Switch 优势
@@ -156,27 +146,30 @@ irm https://claude.ai/install.ps1 | iex
 curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
 ```
 
-**方法二：NPM 安装**
+**方法二：NPM 安装（不推荐）**
 
-1. 打开命令提示符(CMD) 或PowerShell，运行：
+::: warning ⚠️ 不建议使用 npm 安装
+npm 渠道更新滞后，安装的版本通常较旧，建议优先使用上方的 Native 方式。
+:::
+
 ```powershell
 npm install -g @anthropic-ai/claude-code
 ```
 
-2. 验证安装
+验证安装：
 ```powershell
 claude --version
 ```
 
-3. 配置环境变量
+#### 配置环境变量
 
-如果是PowerShell：
+如果是 PowerShell：
 ```powershell
 [Environment]::SetEnvironmentVariable("ANTHROPIC_AUTH_TOKEN", "sk-xxx", "User")
 [Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://api.ikuncode.cc", "User")
 ```
 
-如果是CMD：
+如果是 CMD：
 ```cmd
 setx ANTHROPIC_AUTH_TOKEN "sk-xxx"
 setx ANTHROPIC_BASE_URL "https://api.ikuncode.cc"
@@ -208,7 +201,12 @@ brew install --cask claude-code
 curl -fsSL https://claude.ai/install.sh | bash
 ```
 
-**方法三：NPM 安装**
+**方法三：NPM 安装（不推荐）**
+
+::: warning ⚠️ 不建议使用 npm 安装
+npm 渠道更新滞后，安装的版本通常较旧，建议优先使用上方的 Native 方式。
+:::
+
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
@@ -248,7 +246,12 @@ Linux发行版 (Ubuntu 18.04+, CentOS 7+, Debian 9+等)
 curl -fsSL https://claude.ai/install.sh | bash
 ```
 
-**方法二：NPM 安装**
+**方法二：NPM 安装（不推荐）**
+
+::: warning ⚠️ 不建议使用 npm 安装
+npm 渠道更新滞后，安装的版本通常较旧，建议优先使用上方的 Native 方式。
+:::
+
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
