@@ -23,6 +23,13 @@ const contacts: ContactItem[] = [
     type: 'qq',
   },
   {
+    name: '官方QQ群3群',
+    id: '51920699',
+    link: 'https://qm.qq.com/q/irRUPqaqf6',
+    status: 'normal',
+    type: 'qq',
+  },
+  {
     name: '售后QQ群',
     id: '132077881',
     link: 'https://qm.qq.com/q/mq9v47VMuk',
@@ -202,7 +209,7 @@ const statusLabel: Record<ContactItem['status'], string> = {
 
 @media (min-width: 960px) {
   .ds-contact-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .ds-contact-section {
