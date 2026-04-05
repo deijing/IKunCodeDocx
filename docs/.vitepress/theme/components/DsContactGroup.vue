@@ -19,7 +19,7 @@ const contacts: ContactItem[] = [
     name: '官方QQ群2群',
     id: '30168337',
     link: 'https://qm.qq.com/q/9vJyIfYAYU',
-    status: 'normal',
+    status: 'full',
     type: 'qq',
   },
   {
