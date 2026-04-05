@@ -92,7 +92,7 @@ const statusLabel: Record<ContactItem['status'], string> = {
 <style scoped>
 .ds-contact-section {
   padding: 48px 24px 64px;
-  max-width: 1152px;
+  max-width: 1340px;
   margin: 0 auto;
 }
 
@@ -171,6 +171,7 @@ const statusLabel: Record<ContactItem['status'], string> = {
   font-size: 15px;
   line-height: 1.3;
   color: var(--ds-text);
+  white-space: nowrap;
 }
 
 .ds-contact-id {
