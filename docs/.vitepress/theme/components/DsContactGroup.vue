@@ -26,6 +26,13 @@ const contacts: ContactItem[] = [
     name: '官方QQ群3群',
     id: '51920699',
     link: 'https://qm.qq.com/q/irRUPqaqf6',
+    status: 'full',
+    type: 'qq',
+  },
+  {
+    name: '官方QQ群4群',
+    id: 'IKunCode | 4群',
+    link: 'https://qm.qq.com/q/UHoH0kpyw4',
     status: 'normal',
     type: 'qq',
   },
@@ -210,7 +217,7 @@ const statusLabel: Record<ContactItem['status'], string> = {
 
 @media (min-width: 960px) {
   .ds-contact-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 
   .ds-contact-section {
